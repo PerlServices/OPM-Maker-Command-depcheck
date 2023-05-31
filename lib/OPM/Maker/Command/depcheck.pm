@@ -2,12 +2,12 @@ package OPM::Maker::Command::depcheck;
 
 # ABSTRACT: Check if ticketsystem addon dependencies are installed (works for ((OTRS)) Community Edition, Znuny and OTOBO)
 
-# VERSION
-
 use v5.10;
 
 use strict;
 use warnings;
+
+# VERSION
 
 use version;
 
