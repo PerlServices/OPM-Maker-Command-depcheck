@@ -1,6 +1,6 @@
 [![Kwalitee status](https://cpants.cpanauthors.org/dist/OPM-Maker-Command-depcheck.png)](https://cpants.cpanauthors.org/dist/OPM-Maker-Command-depcheck)
 [![GitHub issues](https://img.shields.io/github/issues/perlservices/OPM-Maker-Command-depcheck.svg)](https://github.com/perlservices/OPM-Maker-Command-depcheck/issues)
-[![CPAN Cover Status](https://cpancoverbadge.perl-services.de/OPM-Maker-Command-depcheck-1.0.0)](https://cpancoverbadge.perl-services.de/OPM-Maker-Command-depcheck-1.0.0)
+[![CPAN Cover Status](https://cpancoverbadge.perl-services.de/OPM-Maker-Command-depcheck-1.0.1)](https://cpancoverbadge.perl-services.de/OPM-Maker-Command-depcheck-1.0.1)
 [![Cpan license](https://img.shields.io/cpan/l/OPM-Maker-Command-depcheck.svg)](https://metacpan.org/release/OPM-Maker-Command-depcheck)
 
 # NAME
@@ -9,7 +9,7 @@ OPM::Maker::Command::depcheck - Check if ticketsystem addon dependencies are ins
 
 # VERSION
 
-version 1.0.0
+version 1.0.1
 
 
 
