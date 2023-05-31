@@ -178,3 +178,31 @@ sub _check_dep {
 }
 
 1;
+
+__END__
+
+=head1 DESCRIPTION
+
+Ticketsystem addons can define dependencies in the I<.opm> files, e.g.
+
+    <PackageRequired Version="6.0.0">FAQ</PackageRequired>
+    <ModuleRequired Version="8.0">Geo::IP2Location</ModuleRequired>
+    <ModuleRequired Version="0.02">HTTP::AcceptLanguage</ModuleRequired>
+
+In this case, the addon requires an other addon - FAQ with minimum version 6.0.0 -
+and two CPAN modules.
+
+This L<OPM::Maker> command checks for a given I<.sopm> or I<.opm> file
+if the dependencies are already installed.
+
+=head1 HOW IT WORKS
+
+For the other addons, this command tries to find the ticketsystem installation
+(it searches for I</opt/otrs>, I</opt/otobo> or I</opt/znuny>) and searches the database for
+installed addons.
+
+If it doesn't find the addons in the database, it looks for a
+I</opt/{otrs,otobo,znuny}/$addonname.sopm> file. If that file exists
+the addon is marked as I<installed>.
+
+For the CPAN dependencies, this command tries to I<use> the module.
